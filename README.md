@@ -37,4 +37,4 @@ docker pull muhfirdausiqbal/jupyter:v2
 docker run -d --restart always -p 8888:8888 -v /home/my_notebooks:home/jovyan/my_notebooks/ --name JupyterArcGIS muhfirdausiqbal/jupyter:v2
 
 # for installation microk8s and zero to jupyterhub check this link
-https://github.com/IqbalF69/spatialjupyter/blob/master/jupyterhub_install.md
+https://github.com/IqbalF69/spatialjupyter/blob/master/install_microk8s.md
