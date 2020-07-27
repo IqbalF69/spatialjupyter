@@ -31,7 +31,7 @@ sudo apt autoremove --purge
 sudo usermod -aG docker ${USER}
 su ${USER}
 
-After that you could pull my images, and run.
+After that you could pull the customized images, and run.
 docker pull muhfirdausiqbal/jupyter:v2
 
 Example running for jupyter container from image assuming that you have directory in your linux server /home/my_notebooks 
