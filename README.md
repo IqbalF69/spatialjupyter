@@ -37,4 +37,5 @@ docker pull muhfirdausiqbal/jupyter:v2
 Example running for jupyter container from image assuming that you have directory in your linux server /home/my_notebooks 
 docker run -d --restart always -p 8888:8888 -v /home/my_notebooks:home/jovyan/my_notebooks/ --name JupyterArcGIS muhfirdausiqbal/jupyter:v2
 
-
+for installation microk8s and zero to jupyterhub please visit
+https://github.com/IqbalF69/spatialjupyter/blob/master/jupyterhub_install.md
