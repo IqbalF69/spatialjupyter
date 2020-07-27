@@ -14,21 +14,22 @@ Incorporating other tools will be nice for this repository project.
 - Requirement: Using Linux 18.04+
 
 # Docker installation with docker compose
-sudo add-apt-repository universe
-sudo apt-get update -y
-sudo apt-get install -y git-core git-buildpackage debhelper devscripts
-sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+:
+  sudo add-apt-repository universe
+  sudo apt-get update -y
+  sudo apt-get install -y git-core git-buildpackage debhelper devscripts
+  sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 
-sudo apt-get update -y
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
-sudo apt autoremove --purge
+  sudo apt-get update -y
+  sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose
+  sudo apt autoremove --purge
 
-sudo usermod -aG docker ${USER}
-su ${USER}
+  sudo usermod -aG docker ${USER}
+  su ${USER}
 
 # After that you could pull the customized images, and run.
 docker pull muhfirdausiqbal/jupyter:v2
