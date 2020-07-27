@@ -14,7 +14,7 @@ Incorporating other tools will be nice for this repository project.
 - Requirement: Using Linux 18.04+
 
 # Docker installation with docker compose
-:
+ubuntu terminal:
   sudo add-apt-repository universe
   sudo apt-get update -y
   sudo apt-get install -y git-core git-buildpackage debhelper devscripts
