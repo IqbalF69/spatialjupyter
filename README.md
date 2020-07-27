@@ -15,7 +15,7 @@ First start that we need to do is to install docker.
 
 #Docker installation with docker compose
 
-git status sudo add-apt-repository universe
+sudo add-apt-repository universe
 sudo apt-get update -y
 sudo apt-get install -y git-core git-buildpackage debhelper devscripts
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
