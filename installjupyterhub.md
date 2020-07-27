@@ -20,21 +20,21 @@ microk8s.enable storage
 
 # edit a config.yaml using nano, vi, or other editor in current directory
 
-config.yaml/:
+config.yaml:
 
-   proxy:
-     secretToken: "6457f0ff2d6728ded9772e6526640cc671e0de2f562bb71c7aaf880d73d1115a"
-     service:
-       type: NodePort
-       nodePorts:
-         http: 30229
-         https: 31223
-   singleuser:
-     image:
-       name: muhfirdausiqbal/jupyter
-       tag: v2
-      extra_resource_limits:
-        nvidia.com/gpu: 1
+    proxy:
+      secretToken: "6457f0ff2d6728ded9772e6526640cc671e0de2f562bb71c7aaf880d73d1115a"
+      service:
+        type: NodePort
+        nodePorts:
+          http: 30229
+          https: 31223
+    singleuser:
+      image:
+        name: muhfirdausiqbal/jupyter
+        tag: v2
+       extra_resource_limits:
+         nvidia.com/gpu: 1
 
       profileList:
 
