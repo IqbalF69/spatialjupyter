@@ -9,12 +9,11 @@ If you cannot install jupyterhub, you can also directly using jupyter notebooks 
 This repository most will be something like practically script for special purposes, such as spatial analyses, and data mining.
 Incorporating other tools will be nice for this repository project.
 
-First start that we need to do is to install docker.
+# First start that we need to do is to install docker.
 (I get this commands from geonode documentation https://docs.geonode.org/en/master/install/basic/index.html)
 - Requirement: Using Linux 18.04+
 
-#Docker installation with docker compose
-
+# Docker installation with docker compose
 sudo add-apt-repository universe
 sudo apt-get update -y
 sudo apt-get install -y git-core git-buildpackage debhelper devscripts
@@ -31,11 +30,11 @@ sudo apt autoremove --purge
 sudo usermod -aG docker ${USER}
 su ${USER}
 
-After that you could pull the customized images, and run.
+# After that you could pull the customized images, and run.
 docker pull muhfirdausiqbal/jupyter:v2
 
-Example running for jupyter container from image assuming that you have directory in your linux server /home/my_notebooks 
+# Example running for jupyter container from image assuming that you have directory in your linux server /home/my_notebooks 
 docker run -d --restart always -p 8888:8888 -v /home/my_notebooks:home/jovyan/my_notebooks/ --name JupyterArcGIS muhfirdausiqbal/jupyter:v2
 
-for installation microk8s and zero to jupyterhub please visit
+# for installation microk8s and zero to jupyterhub check this link
 https://github.com/IqbalF69/spatialjupyter/blob/master/jupyterhub_install.md
