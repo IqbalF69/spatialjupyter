@@ -14,7 +14,7 @@ Incorporating other tools will be nice for this repository project.
 - Requirement: Using Linux 18.04+
 
 # Docker installation with docker compose
-ubuntu terminal:
+
     sudo add-apt-repository universe
     sudo apt-get update -y
     sudo apt-get install -y git-core git-buildpackage debhelper devscripts
@@ -32,10 +32,10 @@ ubuntu terminal:
     su ${USER}
 
 # After that you could pull the customized images, and run.
-docker pull muhfirdausiqbal/jupyter:v2
+    docker pull muhfirdausiqbal/jupyter:v2
 
 # Example running for jupyter container from image assuming that you have directory in your linux server /home/my_notebooks 
-docker run -d --restart always -p 8888:8888 -v /home/my_notebooks:home/jovyan/my_notebooks/ --name JupyterArcGIS muhfirdausiqbal/jupyter:v2
+    docker run -d --restart always -p 8888:8888 -v /home/my_notebooks:home/jovyan/my_notebooks/ --name JupyterArcGIS muhfirdausiqbal/jupyter:v2
 
 # for installation microk8s and zero to jupyterhub check this link
 https://github.com/IqbalF69/spatialjupyter/blob/master/install_microk8s.md
