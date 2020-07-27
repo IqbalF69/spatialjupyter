@@ -49,3 +49,4 @@ alias kubectl='microk8s kubectl'
 alias helm=microk8s helm3'
 
 # begin installation jupyterhub in kubernetes (microk8s)
+https://github.com/IqbalF69/spatialjupyter/blob/master/installjupyterhub
