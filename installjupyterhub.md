@@ -19,6 +19,9 @@ helm repo update
 microk8s.enable storage
 
 # edit a config.yaml using nano, vi, or other editor in current directory
+config.yaml:
+
+
 proxy:
    secretToken: "6457f0ff2d6728ded9772e6526640cc671e0de2f562bb71c7aaf880d73d1115a"
    service:
